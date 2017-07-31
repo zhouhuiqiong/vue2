@@ -24,6 +24,9 @@ import verify from "vue-verify-plugin";
 Vue.use(verify,{
     blur:true
  });
+import commonality from './config/public'
+Vue.use(commonality);
+//Vue.prototype.ajax
 
 // 将API方法绑定到全局
 Vue.prototype.$api = api
